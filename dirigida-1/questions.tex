@@ -1,188 +1,382 @@
 \begin{frame}
-    \begin{enumerate}
-        \item
+  \begin{enumerate}
+    \item
 
-              Considere las siguientes cantidades representadas en
-              complemento a dos:
+          Considere las siguientes cantidades representadas en
+          complemento a dos.
 
-              \begin{equation*}
-                  A=01100001,\quad
-                  B=10011001.
-              \end{equation*}
+          \begin{equation*}
+            A=01100001,\quad
+            B=10011001.
+          \end{equation*}
 
-              Efectúe las siguientes operaciones, expresando el
-              resultado en complemento a dos:
+          Efectúe las siguientes operaciones, expresando el resultado
+          en complemento a dos.
 
-              \begin{multicols}{4}
-                  \begin{enumerate}[a)]
-                      \item
+          \begin{multicols}{4}
+            \begin{enumerate}[a)]
+              \item
 
-                            $A+B$.
+                    $A+B$.
 
-                      \item
+              \item
 
-                            $A-B$.
+                    $A-B$.
 
-                      \item
+              \item
 
-                            $B-A$.
+                    $B-A$.
 
-                      \item
+              \item
 
-                            $-A-B$.
-                  \end{enumerate}
-              \end{multicols}
+                    $-A-B$.
+            \end{enumerate}
+          \end{multicols}
 
-        \item
+    \item
 
-              Sean las cantidades expresadas en el sistema decimal
-              de numeración $A=5$, $B=-7.5$, $C=3.25$ y $D=-30$.
-              Se pide que
+          Sean las cantidades expresadas en el sistema decimal de
+          numeración $A=5$, $B=-7.5$, $C=3.25$ y $D=-30$.
+          Se pide que
 
-              \begin{enumerate}[a)]
-                  \item
+          \begin{enumerate}[a)]
+            \item
 
-                        Represente $A$, $B$, $C$ y $D$ en complemento
-                        a dos de $9$ bits.
-                        Determine $A+D$, $A-D$ y $-A-D$ en dicho
-                        formato así como el rango del mismo.
+                  Represente $A$, $B$, $C$ y $D$ en complemento a dos
+                  de $9$ bits.
+                  Determine $A+D$, $A-D$ y $-A-D$ en dicho formato
+                  así como el rango del mismo.
 
-                  \item\label{q:b}
+            \item\label{q2:b}
 
-                        Represente $A$, $B$, $C$ y $D$ en coma
-                        flotante con un $1$ bit para el signo, $4$
-                        bits para el exponente y $4$ bits para la
-                        mantisa.
+                  Represente $A$, $B$, $C$ y $D$ en coma flotante con
+                  un $1$ bit para el signo, $4$ bits para el
+                  exponente y $4$ bits para la mantisa.
 
-                  \item
+            \item
 
-                        Determine el rango del formato detallado
-                        en~\eqref{q:b}.
-              \end{enumerate}
+                  Determine el rango del formato detallado
+                  en~\eqref{q2:b}.
+          \end{enumerate}
 
-        \item
+    \item
 
-              Determine el valor decimal, la suma y la diferencia de
-              los números binarios $A=11100111$ y $B=10111111$,
-              suponiendo que
+          Determine el valor decimal, la suma y la diferencia de los
+          números binarios $A=11100111$ y $B=10111111$, suponiendo
+          que
 
-              \begin{multicols}{2}
-                  \begin{enumerate}[a)]
-                      \item
+          \begin{multicols}{2}
+            \begin{enumerate}[a)]
+              \item
 
-                            Ambos están representados en magnitud y
-                            signo.
+                    Ambos están representados en magnitud y signo.
 
-                      \item
+              \item
 
-                            Ambos están representados en complemento
-                            a dos.
-                  \end{enumerate}
-              \end{multicols}
+                    Ambos están representados en complemento a dos.
+            \end{enumerate}
+          \end{multicols}
 
-        \item
+    \item
 
-              Conteste verdadero o falso cada proposición.
-              Justifique adecuadamente.
+          Conteste verdadero o falso cada proposición.
+          Justifique adecuadamente.
 
-              \begin{enumerate}[a)]
-                  \item
+          \begin{enumerate}[a)]
+            \item
 
-                        Al aproximar $\pi=\frac{22}{7}$ el error
-                        relativo es aproximadamente
-                        $4.024\times 10^{-5}$.
+                  Al aproximar $\pi=\frac{22}{7}$ el error
+                  relativo es aproximadamente
+                  $4.024\times 10^{-5}$.
 
-                  \item
+            \item
 
-                        Asuma un computador que usa $10$ bits.
-                        El primer bit es para el signo, los
-                        siguientes $4$ bits son para el exponente
-                        (incluye el signo) y el resto de bits son
-                        para la mantisa, entonces la representación
-                        del número $6$ en esta máquina es
-                        $0001111000$.
+                  Asuma un computador que usa $10$ bits.
+                  El primer bit es para el signo, los siguientes $4$
+                  bits son para el exponente (incluye el signo) y el
+                  resto de bits son para la mantisa, entonces la
+                  representación del número $6$ en esta máquina es
+                  $0001111000$.
 
-                  \item
+            \item
 
-                        Al evaluar $4.85274\times 0.0124758$ usando
-                        aritmética de $4$ dígitos con redondeo se
-                        obtiene $0.06057$.
-              \end{enumerate}
+                  Al evaluar $4.85274\times 0.0124758$ usando
+                  aritmética de $4$ dígitos con redondeo se obtiene
+                  $0.06057$.
+          \end{enumerate}
 
-              \saveenum
-    \end{enumerate}
+    \item
+
+          Evalúe
+          \begin{math}
+            f\left(x\right)=
+            x^{3}-
+            6.1x^{2}+
+            3.2x+
+            1.5
+          \end{math}
+          en $x=4.71$ con una aritmética de tres cifras (por redondeo
+          y por truncamiento) usando cada uno de los siguientes
+          métodos:
+
+          \begin{enumerate}[a)]
+            \item
+
+                  Calcule cada sumando del polinomio
+                  \begin{math}
+                    \left(
+                    x^{3},
+                    -6.1x^{2},
+                    3.2x,
+                    1.5
+                    \right)
+                  \end{math}.
+
+            \item
+
+                  Usando la forma anidada
+                  \begin{math}
+                    f\left(x\right)=
+                    \left(
+                    \left(x-6.1\right)x+
+                    3.2
+                    \right)x
+                    +1.5
+                  \end{math}.
+
+            \item
+
+                  En cada caso hallar los errores relativos y
+                  absolutos.
+                  ¿Qué método brinda mayor exactitud?
+          \end{enumerate}
+
+          \saveenum
+  \end{enumerate}
 \end{frame}
 
 
 \begin{frame}
-    \begin{enumerate}
-        \resume
+  \begin{enumerate}
+    \resume
 
-        \item
+    \item
 
-              Evalúe
-              \begin{math}
-                  f\left(x\right)=
-                  x^{3}-
-                  6.1x^{2}+
-                  3.2x+
-                  1.5
-              \end{math}
-              en $x=4.71$ con una aritmética de tres cifras (por
-              redondeo y por truncamiento) usando cada uno de los
-              siguientes métodos:
+          Calcula la suma y la resta de los números
+          $a=0.4523\times 10^{4}$ y $b=0.2115\times 10^{-3}$
+          con una aritmética flotante con mantisa de cuatro
+          dígitos decimales, es decir, una aritmética de cuatro
+          dígitos de precisión.
+          ¿Se produce alguna diferencia cancelativa?
 
-              \begin{enumerate}[a)]
-                  \item
+    \item
 
-                        Calcule cada sumando del polinomio
-                        \begin{math}
-                            \left(
-                            x^{3},
-                            -6.1x^{2},
-                            3.2x,
-                            1.5
-                            \right)
-                        \end{math}.
+          Utilizando aritmética de $7$ dígitos, redondeo y
+          considerando: $a=1234.567$, $b=1.234567$ y $c=3.333333$.
 
-                  \item
+          \begin{multicols}{2}
+            \begin{enumerate}[a)]
+              \item
 
-                        Usando la forma anidada
-                        \begin{math}
-                            f\left(x\right)=
-                            \left(
-                            \left(x-6.1\right)x+
-                            3.2
-                            \right)x
-                            +1.5
-                        \end{math}.
+                    Calcule $\left(a+b\right)c$ y $\left(ac+bc\right)$.
 
-                  \item
+              \item
 
-                        En cada caso hallar los errores relativos y
-                        absolutos.
-                        ¿Qué método brinda mayor exactitud?
-              \end{enumerate}
+                    Compare los errores relativos.
+            \end{enumerate}
+          \end{multicols}
 
-        \item
+    \item
 
-              Calcula la suma y la resta de los números
-              $a=0.4523\times 10^{4}$ y $b=0.2115\times 10^{-3}$
-              con una aritmética flotante con mantisa de cuatro
-              dígitos decimales, es decir, una aritmética de cuatro
-              dígitos de precisión.
-              ¿Se produce alguna diferencia cancelativa?
+          Considere los valores $A=0.492$, $B=0.603$, $C=-0.494$,
+          $D=-0.602$, $E=10^{-5}$ y se desea calcular
+          $F=\frac{A+B+C+D}{E}$.
+          Se les brinda a dos alumnos una calculadora para realizar
+          el cálculo y se les informa que la máquina trabaja con $3$
+          dígitos en la mantisa, con redondeo y opera en base $10$.
+          Efectuaron ese cálculo de forma distinta el alumno $X$
+          calculó $A+B$ y después $C+D$, sumó los valores y dividió
+          por $E$, mientras que el alumno $Y$ calculó $A+C$ y después
+          $B+D$, sumó los valores y dividió por $E$.
+          Realice los cálculos hechos por los dos alumnos y comente
+          sobre los resultados obtenidos.
+          Observe que se usaron procesos matemáticos equivalentes.
 
-              \saveenum
-    \end{enumerate}
+    \item
+
+          Un computador que usa redondeo y punto flotante con $10$
+          bits posee la siguiente estructura:
+          el primer bit guarda información sobre el signo, los $3$
+          bits siguientes guardan información sobre el
+          exponente (desplazado $3$ unidades) y los $6$ bits
+          restantes guardan los dígitos de la mantisa (a partir del
+          segundo porque el primero siempre es uno y con redondeo en
+          el séptimo dígito si esto es necesario).
+          Por ejemplo, el registro $1110001000$ representa al número
+          ${\left(-1\right)}^{1}\times 0.1001000\times 2{6-3}$.
+          ¿Cómo almacena este computador al número $9.123$?
+          Calcule el error relativo que se comete al realizar tal
+          representación.
+
+    \item
+
+          Las raíces de la ecuación $ax^{2}+bx+c=0$ vienen dadas por
+          $x_{1}=\frac{-b+\sqrt{b^2-4ac}}{2a}$,
+          $x_{2}=\frac{-b-\sqrt{b^2-4ac}}{2a}$.
+          Si $a=1$, $b=-0.3001$ y $c=0.00006$, entonces las raíces
+          exactas son $x_{1}=0.29989993$ y
+          $x_{2}=2.000667\times{10}^{-4}$.
+          Use el sistema $\mathbb{F}\left(4,10,-10,10\right)$ y
+          redondeo para calcular $x^{\ast}_{2}$ que es una
+          aproximación de $x_{2}$.
+          Use $\sqrt{0.09002}=0.30003331481$.
+
+    \item
+
+          ¿Cómo se debe evaluar la función
+          \begin{math}
+            f\left(x\right)=
+            x-
+            \sqrt{x^2-\alpha}
+          \end{math}
+          para $\alpha\ll x$?
+
+          \saveenum
+  \end{enumerate}
 \end{frame}
 
 \begin{frame}
-    \begin{enumerate}
-        \resume
+  \begin{enumerate}
+    \resume
 
-        \item
+    \item
 
-              Utilizando aritmética
-    \end{enumerate}
+          Asuma que se necesita calcular
+          \begin{math}
+            A=
+            \sqrt{
+              10^{14}+\frac{2}{3}
+            }-
+            10^7
+          \end{math}
+          en un computador que usa aritmética de punto flotante con una
+          exactitud de $15$ dígitos.
+
+          \begin{enumerate}[a)]
+            \item Explicar si esta fórmula producirá información sin
+                  pérdida de dígitos significativos.
+                  ¿Cuál es el valor?
+
+            \item\label{q12:a}
+
+                  Reescribir la fórmula en una forma alternativa de
+                  modo que un cálculo más exacto sea posible.
+                  Compare con lo obtenido en la parte~\ref{q12:a}).
+          \end{enumerate}
+
+    \item
+
+          Suponga que $x$ e $y$ son vectores de punto flotante y el
+          producto $f\left(x,y\right)=\sum_{i=1}^{n}x_{i}y_{i}$
+          es calculado usando aritmética de punto flotante.
+          Muestre que el error en el cálculo realizado es
+
+          \begin{equation*}
+            \left|
+            \widetilde{f}\left(x,y\right)-
+            f\left(x,y\right)-
+            \right|\leq
+            n\epsilon
+            {\left|x\right|}^{T}
+            \left|y\right|+
+            O\left(\epsilon^2\right).
+          \end{equation*}
+
+
+    \item
+
+          Evalúe la función
+
+          \begin{equation*}
+            y_{1}\left(x\right)=
+            \frac{\log\left(1+x\right)}{x}
+          \end{equation*}
+          para $x\approx 0$ usando doble precisión.
+          Grafique la función en el intervalo
+          $\left[-10^{-15},10^{-15}\right]$.
+          Repita el experimento usando
+          \begin{equation*}
+            y_{2}\left(x\right)=
+            \begin{cases}
+              \frac{\log\left(1+x\right)}{\left(1+x\right)-1},
+               & \text{si }1+x\neq 1 \\
+              1,
+               & \text{si } 1+x=1
+            \end{cases}
+          \end{equation*}
+
+    \item
+
+          Calcule un valor aproximado del épsilon de la máquina
+          usando el algoritmo $1$.
+
+          \begin{algorithm}[H]
+            $A\leftarrow 1.0$\;
+            $B\leftarrow 1.0$\;
+            $p\leftarrow 0$\;
+            \Mientras{\normalfont $\left(\left(A+1\right)-A\right)-1=0$}{
+              $A\leftarrow 2\ast A$\;
+              $p\leftarrow p+1$\;
+              \Mientras{\normalfont $\left(\left(A+B\right)-A\right)-B\neq0$}{
+                $B\leftarrow B+1$\;
+              }
+            }
+          \end{algorithm}
+
+          \saveenum
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \begin{enumerate}
+
+    \resume
+
+    \item
+
+          Demuestre que $\frac{4}{5}$ no se puede representar de
+          manera exacta como número de máquina.
+          ¿Cuál será el número de máquina más cercano?
+          ¿Cuál será el error de redondeo relativo que se produce
+          cuando se almacena internamente este número?
+
+    \item
+
+          Muestre ejemplos de que es posible que
+          \begin{math}
+            \operatorname{fl}
+            \left[
+              \operatorname{fl}
+              \left(xy\right)
+              z
+              \right]\neq
+            \operatorname{fl}
+            \left[
+              x
+              \operatorname{fl}
+              \left(yz\right)
+              \right]
+          \end{math}
+          para números de máquina $x$, $y$ y $z$.
+
+    \item
+
+          Demuestre que si $x$, $y$ son números de máquina de $32$ bits y
+          \begin{math}
+            \left|y\right|\ll
+            \left|x\right|2^{-25}
+          \end{math}.
+
+          \saveenum
+  \end{enumerate}
 \end{frame}

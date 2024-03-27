@@ -1,0 +1,78 @@
+%! Integrantes:
+%! <estudiante 1> (Ciencia de la Computación)
+%! <estudiante 2> (Ciencia de la Computación)
+%! <estudiante 3> (Matemática)
+%! <estudiante 4> (Ciencia de la Computación)
+%! <estudiante 5> (Ciencia de la Computación)
+%! <estudiante 6> (Ciencia de la Computación)
+%! Universidad Nacional de Ingeniería
+%! Facultad de Ciencias
+%! Lima, Perú
+% arara: clean: {
+% arara: --> extensions:
+% arara: --> ['aux','bbl','bcf','blg','log','nav','out',
+% arara: --> 'pdf','run.xml','snm','synctex.gz','toc','vrb']
+% arara: --> }
+% arara: lualatex: {
+% arara: --> shell: yes,
+% arara: --> draft: yes,
+% arara: --> interaction: batchmode
+% arara: --> }
+% arara: biber
+% arara: lualatex: {
+% arara: --> shell: yes,
+% arara: --> draft: yes,
+% arara: --> interaction: batchmode
+% arara: --> }
+% arara: lualatex: {
+% arara: --> shell: yes,
+% arara: --> synctex: yes,
+% arara: --> interaction: batchmode
+% arara: --> }
+% arara: clean: {
+% arara: --> extensions:
+% arara: --> ['aux','bbl','bcf','blg','log','nav','out',
+% arara: --> 'run.xml','snm','synctex.gz','toc','vrb']
+% arara: --> }
+
+\input{preamble}
+
+\title{
+	\huge\sffamily\color{DarkBlue}
+	Práctica Dirigida N$^{\circ}$2\\[.5\baselineskip]
+	\normalsize\normalfont
+	Estabilidad -- Condicionamiento
+}
+
+\subtitle{
+	\large\scshape\color{DarkBlue}
+	Análisis y Modelamiento Numérico I\quad CM4F1 A\\[.25\baselineskip]
+	\normalsize\normalfont
+	Profesores: Luis Roca, Ángel Ramírez e Irla Mantilla
+}
+
+\author{}
+
+\institute{\large
+	Facultad de Ciencias \and
+	Universidad Nacional de Ingeniería
+}
+
+\date{27 de marzo del 2024}
+
+\titlegraphic{
+	\begin{picture}(0,0)
+		\put(-130,80){\makebox(0,0)[rt]{\href{https://www.overleaf.com/read/<token>}{\includegraphics[width=2.5cm]{logooverleaf}}}}
+		\put(200,80){\makebox(0,0)[rt]{\includegraphics[width=2.5cm]{logouni}}}
+	\end{picture}
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\input{questions}
+
+\input{references}
+
+\end{document}
