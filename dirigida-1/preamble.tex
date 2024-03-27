@@ -84,3 +84,7 @@
 \renewenvironment<>{solution}{\begin{block}#1{\translate{Solution}}\itshape}{\end{block}}
 
 \newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
+\newcounter{savedenum}
+\newcommand*{\saveenum}{\setcounter{savedenum}{\theenumi}}
+\newcommand*{\resume}{\setcounter{enumi}{\thesavedenum}}
